@@ -18,7 +18,8 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-
+    --python
+    { import = "lazyvim.plugins.extras.lang.python" },
     -- php lsp
     { import = "lazyvim.plugins.extras.lang.php" },
     -- git
@@ -37,6 +38,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" },
     --prettier
     { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- Telescope
+    { import = "lazyvim.plugins.extras.editor.telescope" },
     -- Lua
     { import = "plugins" },
   },
